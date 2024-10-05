@@ -1,0 +1,87 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Root Variables for Consistent Theme */
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --light-text: rgba(255, 255, 255, 0.85);
+  --accent-color: rgba(255, 255, 255, 0.1);
+  --spacing: 350px;
+
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: var(--light-text);
+  position: absolute;
+  z-index: 99;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* Typography Styling */
+h1, h2, h3, blockquote {
+  font-family: "elevon", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+blockquote p {
+  font-size: 3rem;
+  background-color: var(--light-text);
+  color: var(--dark-bg);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  line-height: 1.2;
+  display: inline-block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header, section {
+  background: var(--dark-bg);
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+section {
+  grid-column: 2 / 8;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+
+blockquote {
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+  text-align: center;
+}
+
+.left {
+  grid-column: 6 / 12;
+  background: var(--accent-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
