@@ -3,5 +3,6 @@ A personal work to practice using three.js and to practice for making my portfol
 
 ## How to use:
 * git clone <-this repository->
-* npm install
-* npm run dev
+* on terminal type "npm install"
+* on terminal type "cd vite-project"
+* on terminal type "npm run dev"
